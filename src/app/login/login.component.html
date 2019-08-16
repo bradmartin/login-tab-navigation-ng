@@ -1,8 +1,18 @@
 <ActionBar>
-    <Label text="Login Component"></Label>
+  <Label text="Login Component"></Label>
 </ActionBar>
 
 <StackLayout>
-    <Label text="Logged in!"></Label>
-    <Button text="Go To Welcome Page" (tap)="onNavigateWelcome()"></Button>
+  <Label text="Logged in!"></Label>
+
+  <Button text="Go To Welcome Page" (tap)="onNavigateWelcome()"></Button>
+
+  <MaxTextBox
+    height="70"
+    [(text)]="email"
+    label="Email"
+    returnKeyType="done"
+    autocorrect="false"
+    autocapitalizationType="none"
+  ></MaxTextBox>
 </StackLayout>

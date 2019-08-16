@@ -8,8 +8,8 @@ import { DataItem, DataService } from "../data.service";
 })
 export class PlayerComponent implements OnInit {
   items: DataItem[];
-  pw: string;
-  pwError = "There is an error, shit";
+  email: string = "";
+  pwError = "There is an error, crap";
 
   constructor(private itemService: DataService) {}
 
