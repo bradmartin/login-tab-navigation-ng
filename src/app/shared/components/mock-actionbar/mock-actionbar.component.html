@@ -1,0 +1,8 @@
+<GridLayout rows="*" columns="50, *, auto, auto, auto" class="action-bar">
+  <ng-content></ng-content>
+  <Button col="0" text="&#xe5cd;" [visibility]="showBackNav ? 'visible' : 'collapse'" (tap)="onNavBtnTap()" class="nav-btn"></Button>
+  <Label col="1" [text]="title" [visibility]="title ? 'visible' : 'collapse'" textWrap="true" class="title"></Label>
+  <Button col="2" text="&#xe8fd;" [visibility]="showSupportBtn ? 'visible' : 'collapse'" (tap)="onSupportTap()" class="action-item-btn"></Button>
+  <Button col="3" text="&#xe8b8;" [visibility]="showSettingsBtn ? 'visible' : 'collapse'" (tap)="onSettingsTap()" class="action-item-btn"></Button>
+  <Button col="4" text="&#xe5d5;" [visibility]="showRefreshBtn ? 'visible' : 'collapse'" (tap)="onRefreshTap()" class="action-item-btn"></Button>
+</GridLayout>
